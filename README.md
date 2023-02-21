@@ -1,6 +1,6 @@
 
-# ats_modules
-> ats_modules은 금융 적요 서비스를 위한 전처리 및 태깅 기능 라이브러리 입니다.
+# ats_module
+> ats_module은 금융 적요 서비스를 위한 전처리 및 태깅 기능 라이브러리 입니다.
 ![](./png/image.png)
 
 
