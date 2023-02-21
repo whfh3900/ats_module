@@ -77,10 +77,17 @@ class NicWordTagging():
         lists = pad_sequences(sequences_array, maxlen=self.inputlength[code])
         
         if code == '지급':
+<<<<<<< HEAD
             result = str(np.argmax(self.model_ex.predict(lists, verbose=0),axis=1)[0])
             result = [k for k, v in self.info[code].items() if v == result][0]
         elif code == '입금':
             result = str(np.argmax(self.model_de.predict(lists, verbose=0),axis=1)[0])
+=======
+            result = str(np.argmax(self.model_ex.predict(lists),axis=1)[0])
+            result = [k for k, v in self.info[code].items() if v == result][0]
+        elif code == '입금':
+            result = str(np.argmax(self.model_de.predict(lists),axis=1)[0])
+>>>>>>> abffb8fb6b27d2010e92367efc422c4a2737b521
             result = [k for k, v in self.info[code].items() if v == result][0]
             
         return (result.split("_")[0], result.split("_")[1])
