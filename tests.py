@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
+
+# __title__ = 'tests'
+# __version__ = '1.0.0'
+# __author__ = 'su.choi@niccompany.co.kr'
+# __license__ = ''
+# __copyright__ = 'Niccompany'
+
 import sys
 import platform
-import pandas as pd
-import numpy as np
-
-from tqdm import tqdm
 from TextPreprocessing import *
 from TextTagging import *
 import multiprocessing
@@ -23,7 +26,6 @@ def work_func(df):
     for i, n in df.iterrows():
         ori_text = str(n['적요'])
         trans_md = str(n['거래구분'])
-        pro_text = ""
 
         if trans_md in ['1', '2']:
             # preprocessing
