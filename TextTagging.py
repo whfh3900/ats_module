@@ -12,6 +12,16 @@ import os
 import json
 import numpy as np
 import pickle
+<<<<<<< HEAD
+=======
+import platform
+
+# 서버에선 gpu 미사용
+#if platform.system() == 'Linux':
+#	import tensorflow as tf
+#	physical_devices = tf.config.list_physical_devices('GPU')
+#	tf.config.experimental.set_memory_growth(physical_devices[0], True)
+>>>>>>> gitlab-origin/main
 
 installpath = os.path.dirname(os.path.realpath(__file__))
 
@@ -72,17 +82,33 @@ class NicWordTagging():
             code = '지급'
         elif code == '2':
             code = '입금'
+<<<<<<< HEAD
+=======
+        else:
+            return ('error', 'error')
+>>>>>>> gitlab-origin/main
 
         sequences_array = self.tokenizer.texts_to_sequences([string.split()])
         lists = pad_sequences(sequences_array, maxlen=self.inputlength[code])
         
         if code == '지급':
+<<<<<<< HEAD
             result = str(np.argmax(self.model_ex.predict(lists, verbose=0),axis=1)[0])
             result = [k for k, v in self.info[code].items() if v == result][0]
         elif code == '입금':
             result = str(np.argmax(self.model_de.predict(lists, verbose=0),axis=1)[0])
             result = [k for k, v in self.info[code].items() if v == result][0]
             
+=======
+            result = str(np.argmax(self.model_ex.predict(lists, verbose=0), axis=1)[0])
+            result = [k for k, v in self.info[code].items() if v == result][0]
+        elif code == '입금':
+            result = str(np.argmax(self.model_de.predict(lists, verbose=0), axis=1)[0])
+            result = [k for k, v in self.info[code].items() if v == result][0]
+        else:
+            return ('error', 'error')
+        
+>>>>>>> gitlab-origin/main
         return (result.split("_")[0], result.split("_")[1])
         
 

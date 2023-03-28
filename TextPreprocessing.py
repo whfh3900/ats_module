@@ -159,3 +159,7 @@ def string_check(x):
     assert type(x) is str, "문자열 형식이 아닙니다. 적요 텍스트의 타입을 확인해주세요. {}".format(x)
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> gitlab-origin/main
