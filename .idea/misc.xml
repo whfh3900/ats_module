@@ -1,7 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (ats_ckonlpy)" project-jdk-type="Python SDK" />
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (ats_ckonlpy)" project-jdk-type="Python SDK" />
+>>>>>>> gitlab-origin/main
 =======
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">

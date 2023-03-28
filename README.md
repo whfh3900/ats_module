@@ -69,7 +69,4 @@ nwt.text_tagging(data, '입금') #('대인거래', '개인입금')
 ```
 
 ## 정보
-
-최승언 – [@velog](https://velog.io/@csu5216) – csu5216@gmail.com
-
 라이센스: None

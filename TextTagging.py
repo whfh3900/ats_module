@@ -111,11 +111,3 @@ class NicWordTagging():
 #### input 타입체크 
 def string_check(x):
     assert type(x) is str, "문자열 형식이 아닙니다. 적요 텍스트의 타입을 확인해주세요. {}".format(x)
-
-#### input 타입체크 
-# def list_check(x):
-#     assert type(x) is list, "리스트 형식이 아닙니다. 적요 텍스트의 타입을 확인해주세요. {}".format(x)
-    
-#### input 타입체크 
-# def numpy_check(x):
-#     assert type(x).__module__ == np.__name__, "array 형식이 아닙니다. 적요 텍스트의 타입을 확인해주세요. {}".format(x)

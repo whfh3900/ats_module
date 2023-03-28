@@ -7,6 +7,7 @@
 # __copyright__ = 'Niccompany'
 
 
+
 import re
 from ckonlpy.tag import Twitter
 from ckonlpy.tag import Postprocessor
@@ -32,6 +33,7 @@ class Nickonlpy():
     >> from ats_module.TextPreprocessing import Nickonlpy
     >> nk = Nickonlpy(base=False)
     """
+
 
     def __init__(self, base=False):
         if base == False:
@@ -223,6 +225,7 @@ def numbers_check(string):
     for jump, i in enumerate(index):
         string_list.insert(i+jump, ' ')
 
+
     # 숫자가 들어간 문자열을 모두 '숫자'라는 단어로 치환
     string_list = ''.join(string_list).split()
     string_list = ['숫자' if i in numbers else i for i in string_list]
@@ -249,6 +252,7 @@ def numbers_to_zero(string):
     """
 
     # 문자열인지 체크
+
     string_check(string)
     string = re.sub('[1-9]', '0', string)
     return string
@@ -289,6 +293,7 @@ def space_delete(string):
     >> space_delete(' 주식회사  ')
     """
     # 문자열인지 체크
+
     string_check(string)
     return string.strip()
 
@@ -313,6 +318,7 @@ def remove_bank(string):
     if string.startswith(('신한-', 'SC-', '국민-', 'KB-', '기업-', '농협-', '우리-', \
                           '금고-', '경남-', '대구-', '우체-', '하나-', '수협-', '부산-', \
                           '신협-')):
+
         return string[3:]
     else:
         return string
@@ -341,3 +347,4 @@ def change_upper(string):
 #### input 타입체크 
 def string_check(x):
     assert type(x) is str, "문자열 형식이 아닙니다. 적요 텍스트의 타입을 확인해주세요. {}".format(x)
+
