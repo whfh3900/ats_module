@@ -3,7 +3,8 @@
 <p align="center">
   <img src="./png/image.png" width="600">
 </p>
-
+<br>
+<br>
 ## 📥 설치 방법
 1. [ats_ckonlpy](https://github.com/whfh3900/ats_ckonlpy) 을 참고하여 설치.<br>
 2. 다음 패키지를 pip로 설치합니다:
@@ -14,7 +15,8 @@
    ```bash
    git clone https://github.com/whfh3900/ats_module.git
    ```
-
+<br>
+<br>
 ## 🛠️ Preprocessing 사용법
 
 ``` python
@@ -52,7 +54,8 @@ from ats_module.TextPreprocessing import Nickonlpy
 nk = Nickonlpy()
 print(nk.predict_tokennize('마이신한포인트'))  # 마이신한 포인트
 ```
-
+<br>
+<br>
 ## 🏷️ Tagging 사용법
 적요 텍스트에 대한 금융 카테고리를 Tagging해 줍니다.
 딥러닝 기반의 multiple classification 모델로 만들었고, CNN과 LSTM 2가지 버젼이 있습니다.
@@ -66,6 +69,7 @@ from ats_module.TextTagging import NicWordTagging
 nwt = NicWordTagging()
 nwt.text_tagging(data, '입금') #('대인거래', '개인입금')
 ```
-
+<br>
+<br>
 ## ℹ️ 정보
 라이센스: None
