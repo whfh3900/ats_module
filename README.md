@@ -13,10 +13,10 @@
 3. 저장소를 클론합니다:
    ```bash
    git clone https://github.com/whfh3900/ats_module.git
-```
+  ```
 
 ## 🛠️ Preprocessing 사용법
-```
+``` python
 # 사용하지 않은 아스키코드 치환
 from ats_module.TextPreprocessing import ascii_check
 print(ascii_check('ＳＳＧＰＡＹ'))  # SSGPAY
@@ -50,8 +50,8 @@ print(nk.name_check('신한최승언'))  # 신한
 from ats_module.TextPreprocessing import Nickonlpy
 nk = Nickonlpy()
 print(nk.predict_tokennize('마이신한포인트'))  # 마이신한 포인트
-
 ```
+
 ## 🏷️ Tagging 사용법
 적요 텍스트에 대한 금융 카테고리를 Tagging해 줍니다.
 딥러닝 기반의 multiple classification 모델로 만들었고, CNN과 LSTM 2가지 버젼이 있습니다.
