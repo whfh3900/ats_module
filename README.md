@@ -1,6 +1,8 @@
 # 📦 ats_module
 > ats_module은 금융 적요 서비스를 위한 전처리 및 태깅 기능 라이브러리입니다.
-![Image](./png/image.png)
+<p align="center">
+  <img src="./png/image.png" width="600">
+</p>
 
 ## 📥 설치 방법
 1. [ats_ckonlpy](https://github.com/whfh3900/ats_ckonlpy) 을 참고하여 설치.<br>
