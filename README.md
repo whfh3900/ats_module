@@ -13,9 +13,10 @@
 3. 저장소를 클론합니다:
    ```bash
    git clone https://github.com/whfh3900/ats_module.git
-  ```
+   ```
 
 ## 🛠️ Preprocessing 사용법
+
 ``` python
 # 사용하지 않은 아스키코드 치환
 from ats_module.TextPreprocessing import ascii_check
